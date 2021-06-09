@@ -80,8 +80,6 @@ app.get('/products', (req, res) => {
             error: 'Please provide search term'
         })
     }
-
-    console.log(req.query.search)
     res.send({
         products: req.query.search
     })
